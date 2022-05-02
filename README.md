@@ -16,3 +16,7 @@ Created following services, :
 Communication with the server is done by HttpClient from the HTTP API (@angular/common/http) - PersonService: which will handle communications with server - UiService: helps changing the view according to the toggle button.
 Added mock server using "npm i json-server" - db.json will act as the database - persons property in db.json will act as table to database - to run the mock server use the following command "npm run server" - refer to the server property in scripts array of package.json file
 if you need to change port number from port 5000.
+
+NOTE:
+_ run the angular app with "ng serve --open"
+_ then run the mock server with "npm run server"
