@@ -8,3 +8,8 @@
 .person .times-icon :hover {
   transform: scale(1.25);
 }
+
+.name-del-container {
+  display: flex;
+  justify-content: space-between;
+}
