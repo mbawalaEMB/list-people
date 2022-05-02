@@ -5,7 +5,7 @@
   * add-person
 
 - button component has properties color, text which will change the button color and text inside a button 
-* text and color are passed from Parent (<app-header>) component of button. Hence I used the @Input decorator. 
+* text and color are passed from Parent (app-header) component of button. Hence I used the @Input decorator. 
 * when button is clicked, btnClick event is emitted(passed to parent component <app-header>). The parent component
 will implement appropriate actions to be taken once button is clicked. Used @Output decorator in button
 component model for this.
@@ -16,7 +16,7 @@ component model for this.
 * With this binding, changes in the component model will be reflected on the view (template) and vice-versa.
 * therefore I added the FormsModule to the app module.
 
-Delete Person: - I pass the click event to the parent (<app-persons>) using event emitter. pass the corresponding person in the event emitter. - Once the parent receives the person, it will fire up a function that updates the list by deleting corresponding person.
+Delete Person: - I pass the click event to the parent (app-persons) using event emitter. pass the corresponding person in the event emitter. - Once the parent receives the person, it will fire up a function that updates the list by deleting corresponding person.
   
 - Communication with the server is done by HttpClient from the HTTP API (@angular/common/http)
   
