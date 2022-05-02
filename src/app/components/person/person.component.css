@@ -1,0 +1,10 @@
+.person {
+  background-color: #e7e7e7;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.person .times-icon :hover {
+  transform: scale(1.25);
+}

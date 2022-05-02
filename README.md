@@ -1,27 +1,18 @@
-# RhenusPersonAdmin
+created following components: - header - persons - button - add-person
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+button component has properties color, text which will change the button color and text inside a button - text and color are passed from Parent (<app-header>) component of button. Hence I used the @Input decorator. - when button is clicked, btnClick event is emitted(passed to parent component <app-header>). The parent componennt
+will implement appropriate actions to be taken once button is clicked. Used @Output decorator in button
+component model for this.
 
-## Development server
+added following packages: - fortawesome/angular-fontawesome
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+created Person interface
 
-## Code scaffolding
+for each input field, I created a two way data binding using ngModel which is in FormsModule.
+With this binding, changes in the component model will be reflected on the view (template) and vice-versa. - therefore I added the FormsModule to the app module.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Delete Person: - I pass the click event to the parent (<app-persons>) using event emitter. pass the corresponding person in the event emitter. - Once the parent receives the person, it will fire up a function that updates the list by deleting corresponding person.
+Created following services, :
+Communication with the server is done by HttpClient from the HTTP API (@angular/common/http) - PersonService: which will handle communications with server - UiService: helps changing the view according to the toggle button.
+Added mock server using "npm i json-server" - db.json will act as the database - persons property in db.json will act as table to database - to run the mock server use the following command "npm run server" - refer to the server property in scripts array of package.json file
+if you need to change port number from port 5000.

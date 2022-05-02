@@ -1,0 +1,22 @@
+{
+  "persons": [
+    {
+      "id": 1,
+      "firstname": "Emmanuel",
+      "lastname": "Mbawala",
+      "email": "example@gmail.com"
+    },
+    {
+      "id": 2,
+      "firstname": "Jane",
+      "lastname": "Stark",
+      "email": "marvel@yahoo.com"
+    },
+    {
+      "firstname": "Test",
+      "lastname": "Emmanuel",
+      "email": "hci@uni-due.de",
+      "id": 3
+    }
+  ]
+}

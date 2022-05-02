@@ -1,0 +1,9 @@
+<div class="person">
+  <h4>Name: {{ person.firstname + " " + person.lastname }}</h4>
+  <div>Email: {{ person.email }}</div>
+  <fa-icon
+    (click)="onDelete(person)"
+    [ngStyle]="{ color: 'red' }"
+    [icon]="faTimes"
+  ></fa-icon>
+</div>

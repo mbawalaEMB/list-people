@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  background-color: rgb(21, 21, 21);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  padding: 8px;
+  transition: 0.2s ease-in-out 0s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.person-details {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+
+.person-details input {
+  padding: 10px;
+}

@@ -1,0 +1,6 @@
+<app-add-person (onAddPerson)="addPerson($event)"></app-add-person>
+<app-person
+  *ngFor="let person_ of persons"
+  [person]="person_"
+  (onDeletePerson)="deletePerson(person_)"
+></app-person>
