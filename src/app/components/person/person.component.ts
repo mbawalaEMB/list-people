@@ -8,7 +8,7 @@ import { Person } from 'src/app/Person';
   styleUrls: ['./person.component.css'],
 })
 export class PersonComponent implements OnInit {
-  @Input() person!: Person;
+  @Input() person!: Person; // ! is non-null operator
   @Output() onDeletePerson: EventEmitter<Person> = new EventEmitter();
 
   faTimes = faTimes;

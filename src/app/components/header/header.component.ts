@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(private uiService: UiService) {
     this.subscription = this.uiService.onToggle().subscribe((value) => {
-      this.showAddPerson = value;
+      this.showAddPerson = <boolean>value;
     });
   }
 
